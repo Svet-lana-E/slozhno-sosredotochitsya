@@ -20,17 +20,20 @@ h5,
 h6,
 p {
   margin: 0;
+  font-size: inherit;
 }
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  line-height: 0;
 }
 
 picture {
   margin: 0;
   padding: 0;
+  
 }
 
 button,
@@ -39,4 +42,12 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: none;
 }
