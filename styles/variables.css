@@ -20,17 +20,6 @@
   --line-height: 1.3;
 
   --padding-mobile: 2.67vi;
-  --padding-desctop: 2.6vi;
-  --padding-laptop: 1.95vi;
-}
-
-.theme__light {
-  --bg-image: url(../images/cover-image-light.png);
-
-  --bg-color: rgba(255, 241, 247, 1);
-  --font-color: rgba(53, 52, 48, 1);
-  --title-color: rgba(255, 194, 230, 1);
-  --accent-color: rgba(255, 141, 203, 1);
-  --accent-dark-color: var(--font-color);
-  
+  --padding-desktop: 2.604vi;
+  --padding-laptop: 20px;
 }
