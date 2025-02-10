@@ -5,7 +5,6 @@
 
 :root {
   --bg-image: url(../images/cover-image-dark.png);
-  --bg-image-decor: url(../images/cover-image.png);
 
   --bg-color: rgba(0, 0, 40, 1);
   --font-color: rgba(241, 178, 206, 1);

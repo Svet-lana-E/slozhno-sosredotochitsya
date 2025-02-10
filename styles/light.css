@@ -10,14 +10,15 @@
   --bg-color: rgba(255, 241, 247, 1);
   --font-color: rgba(53, 52, 48, 1);
   --title-color: rgba(255, 194, 230, 1);
-  --accent-color: rgba(255, 141, 203, 1);
+  --accent-color: #ff8dcb;
   --accent-dark-color: var(--font-color);
 }
 
-.page.theme_light .header__rec {
+/*.page.theme_light .header__rec {
   display: none;
 }
 
+/*
 .page.theme_light .header__theme-menu {
   color: var(--font-color);
 }
@@ -34,7 +35,7 @@
 .page.theme_light .section__title:not(.title-decor) {
   color: var(--font-color);
 }
-
+*/
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -51,7 +52,7 @@
     display: none;
   }
   
-  .header__theme-menu {
+  /*.header__theme-menu {
     color: var(--font-color);
   }
   
@@ -66,5 +67,5 @@
   
   .section__title:not(.title-decor) {
     color: var(--font-color);
-  }
+  }*/
 }

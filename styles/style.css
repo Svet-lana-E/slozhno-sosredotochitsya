@@ -23,6 +23,7 @@
   grid-template-rows: 1fr max-content 1fr;
   padding: min(var(--padding-mobile), 10px);
   align-items: center;
+  z-index: -1;
 }
 
 .decorated-zone {
@@ -59,6 +60,7 @@
   color: var(--accent-color);
   padding-inline-end: 28px;
   line-height: 1.4;
+  z-index: 2;
 }
 
 .header__rec::after {
@@ -237,7 +239,7 @@
 /*--- FOOTER -----*/
 
 .footer {
-  position: relative;
+  
   display: grid;
   justify-items: center;
   align-items: center;
