@@ -7,33 +7,16 @@
 .page.theme_dark {
   --bg-image: url(../images/cover-image-dark.png);
 
-  --bg-color: rgba(0, 0, 40, 1);
-  --font-color: #f1b2ce;
-  --title-color: rgba(219, 0, 255, 1);
-  --accent-color: rgba(255, 0, 112, 1);
-  --accent-dark-color: rgba(0, 0, 40, 1);
+  --bg-color: rgb(0 0 40);
+  --font-color: rgb(241 178 206);
+  --title-color: rgb(219 0 255);
+  --accent-color: rgb(255 0 112);
+  --accent-light-color: var(--accent-color);
+  --accent-dark-color: var(--bg-color);
+  --hover-color: rgb(255 0 112 / 0.4);
 }
 
 
 .page.theme_dark .header__rec {
-  display: inline-block;
+  display: initial;
 }
-
-/*
-.page.theme_dark .header__theme-menu {
-  color: var(--accent-color);
-}
-
-.page.theme_dark .header__theme-menu-button:focus-visible  {
-  border-color: rgba(255, 0, 112, 0.4);
-}
-
-.page.theme_dark .decorated-zone::before,
-.page.theme_dark .decorated-zone::after {
-  border-color: var(--accent-color);
-}
-
-.page.theme_dark .section__title:not(.title-decor) {
-  color: var(--accent-color);
-}
-  */
