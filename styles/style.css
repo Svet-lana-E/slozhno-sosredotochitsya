@@ -77,7 +77,6 @@
   justify-self: end;
   color: var(--accent-light-color);
   font-size: clamp(14px, 4.8vw, 18px);
-  margin-block-start: 5px;
 }
 
 .header__theme-menu-button {
