@@ -21,6 +21,7 @@ h6,
 p {
   margin: 0;
   font-size: inherit;
+  font-weight: inherit;
 }
 
 ul {
@@ -33,7 +34,6 @@ ul {
 picture {
   margin: 0;
   padding: 0;
-  
 }
 
 button,
@@ -44,10 +44,9 @@ a {
   line-height: inherit;
   text-decoration: none;
   cursor: pointer;
-
 }
 
-a:focus-visible,
-button:focus-visible {
+a:focus,
+button:focus {
   outline: none;
 }

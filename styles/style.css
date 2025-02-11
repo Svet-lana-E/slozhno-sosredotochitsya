@@ -13,9 +13,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  line-height: var(--line-height);
 }
 
 /*--- HEADER -----*/
+
 .header {
   block-size: 100vb;
   min-block-size: 668px;
@@ -117,11 +119,11 @@
 .title-decor {
   background-color: var(--accent-color);
   color: var(--accent-dark-color);
-  font-weight: var(--font-accent-weight);
 }
 
 .header__text {
   inline-size: 100%;
+  font-weight: var(--font-accent-weight);
 }
 
 /*--- MAIN -----*/
@@ -137,21 +139,27 @@
 }
 
 .section:not(:last-of-type) {
-  margin-block-end: 50px;
+  margin-block-end: 46px;
 }
 
 /*--- SECTION 1 -----*/
 
-.section__title:not(.title-decor) {
+article.section__content {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.section__title {
   font-weight: var(--font-accent-weight);
   color: var(--accent-light-color);
 }
 
 .section__subtitle {
-  margin-block-end: 10px;
+  font-weight: var(--font-accent-weight);
 }
 
-.section__text a {
+.section__link {
   text-shadow: 1px 1px 0 var(--accent-color);
 }
 
@@ -159,21 +167,16 @@
   border-block-end: 1px solid var(--font-color);
 }
 
-.section__text a:focus,
 .section__text a:focus-visible {
-  border: 1px solid var(--font-color);
+  outline: 1px solid var(--font-color);
 }
 
 /*--- SECTION 2 -----*/
 
 /*--- SECTION 3 -----*/
 
-.advices h3 {
-  --font-accent-weight: 400;
-}
-
 .advices__subtitle {
-  align-self: self-start;
+  font-weight: var(--font-accent-weight);
 }
 
 /*--- SECTION GALLERY -----*/
@@ -184,6 +187,7 @@
 
 .gallery__title {
   margin-block-end: 10px;
+  color: var(--accent-dark-color);
 }
 
 .gallery__list {
@@ -196,6 +200,7 @@
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 /*--- FOOTER -----*/
@@ -205,6 +210,7 @@
   justify-items: center;
   align-items: center;
   block-size: 100vb;
+  min-block-size: 668px;
   padding: 10px;
 }
 
@@ -255,7 +261,7 @@
   }
 
   .section:not(:last-of-type) {
-    margin-block-end: 84px;
+    margin-block-end: 78px;
   }
 
   .section__title {
@@ -306,10 +312,6 @@
 }
 
 @media (min-width: 1024px) {
-  .header {
-    padding: 20px;
-  }
-
   .header__theme-menu {
     align-self: self-start;
     justify-self: center;
@@ -324,14 +326,6 @@
 
   .header__theme-menu-button {
     margin-block-end: initial;
-  }
-
-  .header__title {
-    margin-inline-start: -20px;
-  }
-
-  .main {
-    padding-inline: 20px;
   }
 
   .section {
